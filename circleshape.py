@@ -1,4 +1,5 @@
 import pygame
+from constants import LINE_WIDTH
 
 # Base class for game objects
 class CircleShape(pygame.sprite.Sprite):
@@ -17,6 +18,7 @@ class CircleShape(pygame.sprite.Sprite):
 
     def draw(self, screen: pygame.Surface) -> None:
         # must override
+        # must go in player pygame.draw.polygon(screen, "white", self.triangle(), LINE_WIDTH)
         pass
 
     def update(self, dt: float) -> None:
